@@ -13,6 +13,8 @@ from key import apikey
 ## Moon phase shows during night time
 ## Sun shows during day time
 
+## TODO: Set data to go to PHP file instead? Can use php logic then in the webpage.
+
 # Location currently set to Uxbridge in London, UK
 latitude = "51.545151"
 longitude = "-0.481630"
