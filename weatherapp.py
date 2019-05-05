@@ -36,6 +36,7 @@ weather = data['daily']['data'][0]['icon']
 tempMax = str(data['daily']['data'][0]['temperatureMax'])
 tempLow = str(data['daily']['data'][0]['temperatureLow'])
 wind = str(data['daily']['data'][0]['windSpeed'])
+summary = data['daily']['data'][0]['summary']
 
 # Sometimes might not have data defined
 precip = data['daily']['data'][0]['precipType']
@@ -46,12 +47,14 @@ var weather = 	"%s";
 var tempMax = 	"%s";
 var tempLow = 	"%s";
 var wind = 		"%s";
+var summary = 	"%s";
 
 document.getElementById('weather').innerHTML = weather;
 document.getElementById('tempMax').innerHTML = tempMax;
 document.getElementById('tempLow').innerHTML = tempLow;
-document.getElementById('wind').innerHTML = wind;	
-"""% (weather, tempMax, tempLow, wind))
+document.getElementById('wind').innerHTML = wind;
+document.getElementById('summary').innerHTML = summary;
+"""% (weather, tempMax, tempLow, wind, summary))
 
 f = open('weather.js', 'w')
 
@@ -62,4 +65,4 @@ f.close()
 
 # Start printing our hard-earned data
 print("The current weather in " + location +" is " + weather + " with a low of " + tempLow + " and a high of " + tempMax + 
-	  ". The wind speed is " + wind + ".")
+	  ". The wind speed is " + wind + ". " + summary)

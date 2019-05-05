@@ -1,10 +1,12 @@
 
 var weather = 	"partly-cloudy-day";
-var tempMax = 	"12.62";
-var tempLow = 	"3.82";
-var wind = 		"6.21";
+var tempMax = 	"11.83";
+var tempLow = 	"4.16";
+var wind = 		"5.31";
+var summary = 	"Mostly cloudy throughout the day.";
 
 document.getElementById('weather').innerHTML = weather;
 document.getElementById('tempMax').innerHTML = tempMax;
 document.getElementById('tempLow').innerHTML = tempLow;
-document.getElementById('wind').innerHTML = wind;	
+document.getElementById('wind').innerHTML = wind;
+document.getElementById('summary').innerHTML = summary;
