@@ -1,8 +1,8 @@
 
-var weather = 	"wind";
-var tempMax = 	"10.46";
-var tempLow = 	"3.96";
-var wind = 		"10.87";
+var weather = 	"partly-cloudy-day";
+var tempMax = 	"12.62";
+var tempLow = 	"3.82";
+var wind = 		"6.21";
 
 document.getElementById('weather').innerHTML = weather;
 document.getElementById('tempMax').innerHTML = tempMax;

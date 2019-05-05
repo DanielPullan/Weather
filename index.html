@@ -14,4 +14,40 @@
 
 </body>
 <script type="text/javascript" src="weather.js"></script>
+
+<!-- 
+
+clear-day clear-night rain snow sleet wind fog cloudy partly-cloudy-day partly-cloudy-night
+
+hail thunderstorm tornado possible in future
+
+-->
+
+<script>
+
+if (weather === "clear-day") 
+{
+  document.getElementById("demo").innerHTML = "Good day!";
+} else if (weather === "clear-night") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "rain") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "snow") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "sleet") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "wind") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "fog") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "partly-cloudy-day") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else if (weather === "partly-cloudy-night") {
+    document.getElementById("demo").innerHTML = "Good Bat!";
+} else {
+    document.getElementById("demo").innerHTML = "Weather unknown, potentially bad.";
+}
+
+</script>
+
 </html>
