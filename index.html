@@ -1,28 +1,32 @@
 <html>
-	<head>
-		<title>Uxbridge Weather</title>
-		<link rel="stylesheet" href="_style.css">
-		 <link rel="stylesheet" href="simple-grid.css">
-	</head>
+<head>
+	<title>Uxbridge Weather</title>
+	<link rel="stylesheet" href="_style.css">
+	<link rel="stylesheet" href="simple-grid.css">
+</head>
 
 <body>
-<div class="container">
-      <div class="row">
-        <div class="col-12">
-        	<h1>Weather</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-    		<p>Today's weather is <span id="weather"></span> with winds of <span id="wind"></span> mph.</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1>Weather</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+			<!-- 
+				save this for later
+				<p>Today's weather is <span id="weather"></span> with winds of <span id="wind"></span> mph.</p>
 			<p>The temperature will be a low of <span id="tempLow"></span>c and a high of <span id="tempMax"></span>c.</p>
-			<p>It will be <span id="summary"></span></p>
-			<p><span id="icon"></span></p>
-        </div>
-      </div>
-	<div class="footer">
-		<p><a href="https://darksky.net/poweredby/">Powered by Dark Sky</a></p>
+		-->
+
+		<span id="summary"></span>
+		<p><span id="icon"></span></p>
 	</div>
+</div>
+<div class="footer">
+	<p><a href="https://darksky.net/poweredby/">Powered by Dark Sky</a></p>
+</div>
 </div>
 
 </body>
@@ -37,6 +41,8 @@ hail thunderstorm tornado possible in future
 -->
 
 <script>
+
+/*
 if (weather == "sunny"){
 	//document.getElementById("icon").innerHTML = "It's partly cloudy today";//
 	document.body.style.backgroundColor = "#2a2a2a";
@@ -44,31 +50,31 @@ if (weather == "sunny"){
 	document.getElementById("icon").innerHTML = "We didn't expect this";
 	document.body.style.backgroundColor = "#2a2a2a";
 }
-
+*/
 
 
 /*
 if (weather == "clear-day") 
 {
-  document.getElementById("demo").innerHTML = "Good day!";
+	document.getElementById("demo").innerHTML = "Good day!";
 } else if (weather == "clear-night") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "rain") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "snow") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "sleet") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "wind") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "fog") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "partly-cloudy-day") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else if (weather == "partly-cloudy-night") {
-    document.getElementById("demo").innerHTML = "Good Bat!";
+		document.getElementById("demo").innerHTML = "Good Bat!";
 } else {
-    document.getElementById("demo").innerHTML = "Weather unknown, potentially bad.";
+		document.getElementById("demo").innerHTML = "Weather unknown, potentially bad.";
 }
 */
 
