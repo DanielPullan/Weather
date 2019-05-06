@@ -41,10 +41,10 @@ precip = str(data['daily']['data'][0]['precipType'])
 
 # Creating the weather config file
 webpage = ("""var weather = "%s";
+var summary = "%s";
 var tempMax = "%s";
 var tempLow = "%s";
 var wind = "%s";
-var summary = "%s";
 var rain = "%s";
 
 document.getElementById('weather').innerHTML = weather;

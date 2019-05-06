@@ -1,8 +1,8 @@
 var weather = "fog";
-var tempMax = "Foggy starting in the evening.";
-var tempLow = "11.62";
-var wind = "6.32";
-var summary = "6.84";
+var summary = "Foggy starting in the evening.";
+var tempMax = "11.62";
+var tempLow = "6.32";
+var wind = "6.84";
 var rain = "rain";
 
 document.getElementById('weather').innerHTML = weather;
