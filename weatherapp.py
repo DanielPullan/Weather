@@ -30,31 +30,30 @@ f.write(str(data))
 f.close()
 
 # Will always have data defined
-weather = data['daily']['data'][0]['icon']
+weather = str(data['daily']['data'][0]['icon'])
 tempMax = str(data['daily']['data'][0]['temperatureMax'])
 tempLow = str(data['daily']['data'][0]['temperatureLow'])
 wind = str(data['daily']['data'][0]['windSpeed'])
-summary = data['daily']['data'][0]['summary']
+summary = str(data['daily']['data'][0]['summary'])
 
 # Sometimes might not have data defined
-precip = data['daily']['data'][0]['precipType']
+precip = str(data['daily']['data'][0]['precipType'])
 
 # Creating the weather config file
-webpage = ("""
-	var weather = 	"%s";
-	var tempMax = 	"%s";
-	var tempLow = 	"%s";
-	var wind = 		"%s";
-	var summary = 	"%s";
-	var rain = 		"%s";
+webpage = ("""var weather = "%s";
+var tempMax = "%s";
+var tempLow = "%s";
+var wind = "%s";
+var summary = "%s";
+var rain = "%s";
 
-	document.getElementById('weather').innerHTML = weather;
-	document.getElementById('tempMax').innerHTML = tempMax;
-	document.getElementById('tempLow').innerHTML = tempLow;
-	document.getElementById('wind').innerHTML = wind;
-	document.getElementById('summary').innerHTML = summary;
-	document.getElementByID('rain').innerHTML = rain;
-	"""% (weather, tempMax, tempLow, wind, summary, rain))
+document.getElementById('weather').innerHTML = weather;
+document.getElementById('summary').innerHTML = summary;
+document.getElementById('tempMax').innerHTML = tempMax;
+document.getElementById('tempLow').innerHTML = tempLow;
+document.getElementById('wind').innerHTML = wind;
+document.getElementById('rain').innerHTML = rain;
+"""% (weather, summary, tempMax, tempLow, wind, precip))
 
 # Write the weather config to the config file
 f = open('weather.js', 'w')
