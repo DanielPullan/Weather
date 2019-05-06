@@ -46,21 +46,20 @@ webpage = ("""
 	var tempLow = 	"%s";
 	var wind = 		"%s";
 	var summary = 	"%s";
+	var rain = 		"%s";
 
 	document.getElementById('weather').innerHTML = weather;
 	document.getElementById('tempMax').innerHTML = tempMax;
 	document.getElementById('tempLow').innerHTML = tempLow;
 	document.getElementById('wind').innerHTML = wind;
 	document.getElementById('summary').innerHTML = summary;
-	"""% (weather, tempMax, tempLow, wind, summary))
+	document.getElementByID('rain').innerHTML = rain;
+	"""% (weather, tempMax, tempLow, wind, summary, rain))
 
+# Write the weather config to the config file
 f = open('weather.js', 'w')
-
 f.write(webpage)
-
 f.close()
 
-
 # Start printing our hard-earned data
-print("The current weather in " + location +" is " + weather + " with a low of " + tempLow + " and a high of " + tempMax + 
-	". The wind speed is " + wind + ". " + summary)
+print("The current weather in " + location +" is " + weather + " with a low of " + tempLow + " and a high of " + tempMax + ". The wind speed is " + wind + ". " + summary)
