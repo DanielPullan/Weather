@@ -7,5 +7,7 @@ Set the long/lat location of the area you would like your page to reflect the we
 # Warning
 Make sure not to publish your API key.
 
+# Status
+**No further updates** Would rather work on something else.
 
 [Powered by Dark Sky.](https://darksky.net/poweredby/)
